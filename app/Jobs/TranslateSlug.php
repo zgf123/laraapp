@@ -33,7 +33,7 @@ class TranslateSlug implements ShouldQueue
      */
     public function handle()
     {
-        $slug = app(SlugTranslateHandler::class)->translate($topic->title);
+        $slug = app(SlugTranslateHandler::class)->translate($this->topic->title);
         \DB::table('topics')->where('id', $this->topic->id)->update(['slug' => $slug]);
     }
 }
