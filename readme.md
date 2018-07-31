@@ -84,3 +84,19 @@ composer require gregwar/captcha
 
 
 composer require socialiteproviders/weixin
+
+
+composer require tymon/jwt-auth:1.0.0-rc.2
+
+
+composer require liyu/dingo-serializer-switch
+
+
+composer require overtrue/laravel-query-logger --dev
+tail -f ./storage/logs/laravel.log
+
+
+composer require jpush/jpush
+
+
+composer require laravel/passport:~4.0
